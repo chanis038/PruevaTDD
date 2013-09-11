@@ -8,7 +8,8 @@ import org.junit.Test;
 
 
 public class testCategorias {
-
+	public static String BD[] = new String[50];
+	public static  int  cant=0;
 	Categorias_ts pruevas;
 	
 	@Before

@@ -1,8 +1,7 @@
 package test;
 
 public class Categorias_ts {
-    String BD[] = new String[50];
-    int  cant=0;
+   
    public  Categorias_ts(){
     	
     	
@@ -35,8 +34,8 @@ public boolean funcion_agregar_nombre(String nuevo_nombre){
 
 private boolean BD_insert(String nombre,String padre){
     boolean resul = false;
-      for(int r=0;r<cant;r++){
-    	  if(nombre.equals(BD[r])){
+      for(int r=0;r<testCategorias.cant;r++){
+    	  if(nombre.equals(testCategorias.BD[r])){
     		  resul=true; 
     	  }   
       } 
@@ -47,8 +46,8 @@ private boolean BD_insert(String nombre,String padre){
  		 
  	 }else{
  	   resul= !resul; // no existe la categoria , ingreso exitoso
- 	  BD[cant]= new String (nombre);
- 	  cant++;
+ 	  testCategorias.BD[testCategorias.cant]= new String (nombre);
+ 	 testCategorias.cant++;
  	 }         
     
   return resul;
