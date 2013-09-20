@@ -8,8 +8,9 @@ import org.junit.Test;
 
 
 public class testCategorias {
-	public static String BD[] = new String[50];
-	public static  int  cant=0;
+	public static String BD[] = new String[50];// array utilizado para la simulacion de la Base de datos
+	public static  int  cant=0; // 
+
 	Categorias_ts pruevas;
 	
 	@Before
@@ -23,11 +24,11 @@ public class testCategorias {
 
 	@Test
 	public void test() {
-		  // prueva para crear una categoria con nombre  Gastos casa
-	    boolean resultado = pruevas.funcion_agregar_nombre("casa");
-        assertEquals(true,resultado);
-	}
-
+			  // prueva para crear una categoria con nombre  Gastos casa
+		    boolean resultado = pruevas.funcion_agregar_nombre("casa");
+	        assertEquals(true,resultado);
+		}
+	
 	@Test
 	public void testnombrevacio() {
 		  // prueva para crear una categoria con nombre vacio
@@ -55,5 +56,32 @@ public class testCategorias {
 	    boolean resultado = pruevas.funcion_agregar_nombre("educacio");
         assertEquals(true,resultado);
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * 
+ * 
+ * 	
+
+
+	
+
+*/

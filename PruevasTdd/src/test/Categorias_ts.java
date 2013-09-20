@@ -8,7 +8,7 @@ public class Categorias_ts {
      }
      
    
-public boolean funcion_agregar_nombre(String nuevo_nombre){
+  public boolean funcion_agregar_nombre(String nuevo_nombre){
 	boolean rtn = true;
 		
 		if(!nuevo_nombre.equals("")){
@@ -27,7 +27,13 @@ public boolean funcion_agregar_nombre(String nuevo_nombre){
 		rtn = false;
 	}
 	return rtn;
-}
+		}
+
+
+
+
+
+
 
 
 
@@ -54,3 +60,5 @@ private boolean BD_insert(String nombre,String padre){
 }
 
 }
+
+
